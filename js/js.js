@@ -1,7 +1,4 @@
 $(document).ready(function(){
-//right click ro hanuz ok nakardam ke nayad az page birun
-//add white spaces to code to be more readable
-//do optimization after it goes right
   var oddOrEven = 0;
   var myStudent = [];
   var oddOrEven2 =0;
@@ -30,14 +27,14 @@ $(document).ready(function(){
   yes.on({mouseenter:beGreen ,mouseleave: beWhite , click:okDelete})
   no.on({mouseenter:beRed ,mouseleave: beWhite , click:nokDelete})
   yes2.on({mouseenter:beGreen ,mouseleave: beWhite })
-  $('*').contextmenu(function(){//right click //chera harbar ke right click mikonim in dobar ejra mishe??
-	event.preventDefault();// console.count()
+  $('*').contextmenu(function(){
+	event.preventDefault();
 	var whereAmI = event.clientX;
 	if(whereAmI>$(window).width()-100)
 		whereAmI-=100;
 	$('#rightClick').css({left:whereAmI,top:event.clientY}).fadeIn();//location for right click menus
 	})
-  $('body').click(function(){//when we click on body , the right click menu should fade out
+  $('body').click(function(){
 	$('#rightClick').fadeOut();
   })
   $('div#rightClick div').on({click:changeColor})
@@ -89,7 +86,7 @@ $(document).ready(function(){
 		$(this).parent().siblings('td.editable').html("<input value = '"+placeHolder+"'></input>")
 		$('table tbody tr td:nth-last-of-type(2) img').off('click')
 		$(this).on('click',zasem)	
-		}//pashmaaaam az in nokte ei ke inja yad gereftam =))))))) ba if kar nakard chon har dotasho hamzaman check mikard vali else ke gozashtam rahat ok shod chon avval if ro check kard 
+		} 
 	  else{
 		var valueToSave= $(this).parent().siblings('td.editable').children().val()	
 		$(this).attr('src','img/edit.png')
@@ -194,7 +191,7 @@ $(document).ready(function(){
 	if(myStudent.length==0){
 	  var y = Math.floor((Math.random() * 50) + 1);}
 	else{
-	  do {//haqiqatan bayad tarikh bezanam ke chand ruz dargir in fuckhead budam :)))
+	  do {//haqiqatan bayad tarikh bezanam ke chand ruz dargir in budam :)))
 	    var y = Math.floor((Math.random() * 50) + 1);
 	    var a = false;
 		for(z in myStudent){
@@ -282,7 +279,7 @@ $(document).ready(function(){
     myStudentSortedName(1);
 	read(myStudent,color1,color2);  
     }
-	else{//split ye ('') azina ezafe mizare
+	else{
   
     myStudentSortedName(-1);
 	read(myStudent,color1,color2);
@@ -317,18 +314,7 @@ $(document).ready(function(){
 	}	
   })
 })
-//382
-//jesus , 70 khat ezafiiiiii , che mikoni maaardddd?:))))))
-
 
   var numberBox = [];
   
-  // if(numberBox.length>0){
-  //   for (n=0;n<data.length;n++){
-
-  //     if()
-  //     var number = Math.floor((Math.random() * x) + y);
-  //   }
-  // }
-  // else{numberBox.push(Math.floor((Math.random() * x) + y))}
   

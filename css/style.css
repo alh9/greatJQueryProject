@@ -1,0 +1,63 @@
+*{box-sizing:border-box;margin:0px;padding:0px}
+body{
+	background-color:#1ecbe1;}
+	
+table, form{
+	width: 70%;
+	background:silver;
+	margin: auto;
+	padding:10px;
+	border-collapse:collapse;
+	text-align:center;
+}
+
+
+th{
+		background:yellow;
+		border: 2px solid red;
+}
+
+td{
+	background-color : #eee;
+	border: 1px solid black;
+}
+
+tr:nth-child(odd) td{
+	background-color : #ccc;	
+}
+th:first-child{
+	width:20px;
+}
+img{
+	
+	vertical-align :middle;
+}
+p#clock{background-color:#5f7ea0;font-size:30px;width:170px;margin:auto;border-radius:20px;padding-left:7px}	
+div.toTop{width:50px;height:50px;border-radius:25px;position:fixed;right:20px;bottom:30px;display:none;cursor:pointer}	
+div#delCheck{padding-top:2px;position:relative;}
+div#delCheck p {font-size:20px;font-weight:bold;text-align:center;}	
+div#delCheck ~ p{display:inline-block;margin-top:120px;text-align:center;color:white;height:30px;cursor:pointer} 	
+div#delCheck ~ p.yes{margin-left:30px;background-color:#64dd22;width:40px} 	
+div#delCheck ~ p:last-of-type{float:right;margin-right:30px;width:40px;background-color:red;} 	
+div#delDone{width:40%;height:100px;background-color:black;position:fixed;top:10px;left:20px;display:none}
+div#delDone p{color:red}
+div#delDone span{color:white}	
+p.none{font-size:30px;text-align:center;}	
+div#rightClick{height:280px;width:90px;background-color:red;display:none;position:fixed}
+div#rightClick div{height:40px;width:100%;border:solid white 2px;}	
+div#rightClick div#rightClickHeader{background-color:yellow;}	
+div#rightClick div#rightClickHeader p {color:black;}	
+div#rightClick div p {color:white;font-size:20px;font-weight:bold;text-align:center}	
+div#rightClick div:hover:not(#rightClickHeader){background-color:black;cursor:pointer}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
